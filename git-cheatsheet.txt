@@ -1,0 +1,31 @@
+Настройка Git:
+git config --global user.name "ваш_ник"
+git config --global user.email "ваша_почта"
+Создание и инициализация репозитория:
+git init -b main
+git status
+Работа с файлами и коммитами:
+git add .
+git add Program/Program.cs
+git commit -m "Initial commit"
+git log
+git log --oneline
+Работа с удалённым репозиторием:
+git remote add origin <ссылка>
+git remote -v
+git push -u origin main
+git pull
+git fetch --prune
+Работа с ветками:
+git branch
+git checkout -b new-feature
+git switch -c feature
+git switch main
+git switch -
+git branch -d hotfix
+git branch -D feature
+git push --set-upstream origin feature
+Проблемы и решения:
+1. fatal: The current branch feature has no upstream branch решение: git push --set-upstream origin feature
+2. Выход из git log, если терминал завис на : нажать q
+3. Не пушится ветка сначала git push --set-upstream origin <ветка>
